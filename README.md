@@ -11,10 +11,10 @@ this on a guest PC at my house.  One that I will have to do very little maintena
 If corrupted or hardware failure the recovery time will be minimal. 
 
 
-###Date: Feb 25, 2025
-###Version: 0.1
+### Date: Feb 25, 2025  
+### Version: 0.1
 
-##Status: 
+### Status: 
  Basic configuration for the OS and all needed packages done.
  LightDM with Slick greeter is current Login Manager
 
@@ -23,8 +23,8 @@ If corrupted or hardware failure the recovery time will be minimal.
  GNOME  Very basic, some common extensions are preloaded 
  Cinnamon Very basic  Using default config at moment. Need to research adding plugins/widgets by default 
 
-##Layout:  
-    etc/nixos  Top level 
+### Layout:  
+    etc/nixos          Top level 
     etc/nixos/configs  The config files for HL, BSPWM, etc
     etc/nixos/scripts  Any scripts need for install or post install 
     etc/nixos/assets   Any files needed to support configuration or scripting
@@ -34,7 +34,7 @@ If corrupted or hardware failure the recovery time will be minimal.
 
 
 
- Credits/Acknowlegements:  
+ ### Credits/Acknowlegements:  
   Tyler Kelley   @zaney   For helping me on this NIX journey  I would not have gotten this far on my own.
   Drew           @JustAGuyLinux For re-introducing me to BSPWM and reminding me how good Debian is 
   JAK            @Jakoolit  His amazing work with Hyprland and install scripting 
