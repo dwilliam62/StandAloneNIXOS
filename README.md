@@ -25,9 +25,10 @@ If corrupted or hardware failure the recovery time will be minimal.
 
 ### Layout:  
     etc/nixos          Top level 
-    etc/nixos/configs  The config files for HL, BSPWM, etc
+    etc/nixos/configs  The config files for Hyprland and pyprland
     etc/nixos/scripts  Any scripts need for install or post install 
     etc/nixos/assets   Any files needed to support configuration or scripting
+    dot.configs/       All the .config files 
 
 
 
