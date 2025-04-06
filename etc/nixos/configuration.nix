@@ -57,7 +57,7 @@ services.xserver = {
 
   programs = { 
       hyprland.enable = true;  
-      firefox.enable = false; 
+      firefox.enable = true; 
       waybar.enable = true; 
       neovim.enable = true; 
       fuse.userAllowOther = true; 
@@ -200,6 +200,7 @@ systemd.services.flatpak-repo = {
      gnomeExtensions.system-monitor
      gnome-extension-manager
    ## End ##
+   #
    arandr
    appimage-run
    bat
@@ -210,7 +211,7 @@ systemd.services.flatpak-repo = {
    clang
    cmatrix
    curl
-   discord
+        #discord
    discord-canary
    dua
    duf
@@ -233,6 +234,8 @@ systemd.services.flatpak-repo = {
    glibc
    ghostty
    glib
+   glxinfo
+   gpu-viewer
    gnumake
    google-chrome
    gping
@@ -301,10 +304,11 @@ systemd.services.flatpak-repo = {
    wget 
    wofi
   #  override for Yazi to keep it at v3.3
-    (yazi.overrideAttrs (oldAttrs: {
-      inherit (oldAttrs) pname;
-      version = "0.3.3";
-    }))
+  #  (yazi.overrideAttrs (oldAttrs: {
+        #   inherit (oldAttrs) pname;
+        #      version = "0.3.3";
+        #    }))
+   yazi
    ytmdl
    zip
    zsh
