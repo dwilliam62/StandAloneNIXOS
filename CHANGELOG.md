@@ -9,3 +9,4 @@ Date:       Version:        Comments:
 3/27/25     0.3             Updated added Drew's NeoVIM config enabled firefox for MD preview
 4/6/25      0.4             Updated pkgs and added glxinfo and gpu-viewer 
 4/11/25     0.5             added more fonts updated fastfetch config file, boot menu timer to 10 and fixed logout in HL
+4/11/25     0.5             Added waypaper --restore and added rule to float waypaper 
