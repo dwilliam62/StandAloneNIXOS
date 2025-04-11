@@ -98,7 +98,7 @@
          "format": "襤",
          "tooltip": false,
          //"on-click": "$HOME/.config/wayfire/scripts/wlogout",
-         "on-click": "$HOME/.config/wayfire/scripts/rofi_powermenu",
+         "on-click": "wlogout",
     },
 
 	// waybar-disk
