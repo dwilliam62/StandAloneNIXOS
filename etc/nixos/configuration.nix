@@ -14,6 +14,7 @@
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.timeout = 10;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -79,13 +80,37 @@ services.xserver = {
 
   #Fonts
   fonts.packages = with pkgs; [
-    noto-fonts
-    fira-code
-    noto-fonts-cjk-sans
-    jetbrains-mono
-    font-awesome
-    terminus_font
-    #(nerdfonts.override {fonts = ["JetBrainsMono"];})
+        # noto-fonts
+        #  fira-code
+        #  noto-fonts-cjk-sans
+        #  jetbrains-mono
+        #  font-awesome
+        #  terminus_font
+        #(nerdfonts.override {fonts = ["JetBrainsMono"];})
+
+   dejavu_fonts
+      fira-code
+      fira-code-symbols
+      font-awesome
+      hackgen-nf-font
+      ibm-plex
+      inter
+      jetbrains-mono
+      material-icons
+      maple-mono.NF
+      minecraftia
+      nerd-fonts.im-writing
+      nerd-fonts.blex-mono
+      noto-fonts
+      noto-fonts-emoji
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-monochrome-emoji
+      powerline-fonts
+      roboto
+      roboto-mono
+      symbola
+      terminus_font
   ];
 
   services = { 
@@ -302,6 +327,7 @@ systemd.services.flatpak-repo = {
    waypaper
    wezterm
    wget 
+   wlogout
    wofi
   #  override for Yazi to keep it at v3.3
   #  (yazi.overrideAttrs (oldAttrs: {
