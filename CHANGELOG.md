@@ -14,3 +14,4 @@ Date:       Version:        Comments:
                             Removed hardware-configuration.nix and removed duplicate configuration.nix
                             Added evil-helix apps yazi is older so added compatible config
                             Removed pulse-audio from configuraton.nix it's no longer supported
+                            Removed fonts not found in stable, maple, im-writing

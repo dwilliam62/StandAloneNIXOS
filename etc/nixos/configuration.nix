@@ -102,10 +102,10 @@
     inter
     jetbrains-mono
     material-icons
-    maple-mono.NF
+    #maple-mono.NF
     minecraftia
-    nerd-fonts.im-writing
-    nerd-fonts.blex-mono
+    #nerd-fonts.im-writing
+    #nerd-fonts.blex-mono
     noto-fonts
     noto-fonts-emoji
     noto-fonts-cjk-sans
@@ -357,12 +357,10 @@
     jq-lsp
     vscode-langservers-extracted
     bash-language-server
-    awk-language-server
     vscode-extensions.llvm-vs-code-extensions.vscode-clangd
     clang-tools
     docker-compose-language-service
     docker-compose
-    docker-language-server
     typescript-language-server
   ];
 
