@@ -1,4 +1,4 @@
-#  DDUBS Hyprland, GNOME, BSPWM, Cinnamon config
+# DDUBS Hyprland, GNOME, BSPWM, Cinnamon config
 #
 {
   config,
@@ -128,7 +128,6 @@
     blueman.enable = false;
     dbus.enable = true;
     qemuGuest.enable = true;
-    pulseaudio.enable = false;
     libinput.enable = false;
     pipewire = {
       enable = true;
