@@ -11,4 +11,5 @@ Date:       Version:        Comments:
 4/11/25     0.5             added more fonts updated fastfetch config file, boot menu timer to 10 and fixed logout in HL
 4/11/25     0.5             Added waypaper --restore and added rule to float waypaper 
 4/20/25     0.6             Renamed wezterm directory (was a ,) and updated config to drew's current version
-                            Removed hardware-configuration.nix and removed duplicate configuration.nix 
+                            Removed hardware-configuration.nix and removed duplicate configuration.nix
+                            Added evil-helix apps yazi is older so added compatible config 
