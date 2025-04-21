@@ -15,3 +15,4 @@ Date:       Version:        Comments:
                             Added evil-helix apps yazi is older so added compatible config
                             Removed pulse-audio from configuraton.nix it's no longer supported
                             Removed fonts not found in stable, maple, im-writing
+                            Added offset to pyprland position to center it better
