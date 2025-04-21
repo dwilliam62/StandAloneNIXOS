@@ -16,3 +16,4 @@ Date:       Version:        Comments:
                             Removed pulse-audio from configuraton.nix it's no longer supported
                             Removed fonts not found in stable, maple, im-writing
                             Added offset to pyprland position to center it better
+                            Updated hyprland.conf file. Removed dups
