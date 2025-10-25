@@ -1,11 +1,6 @@
-# DDUBS Hyprland, GNOME, BSPWM, Cinnamon config
+## DDUBS Hyprland, GNOME, BSPWM, Cinnamon config
 #
 {
-  config,
-  system,
-  host,
-  options,
-  libs,
   lib,
   pkgs,
   ...
@@ -23,7 +18,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nixos-bspwm"; # Define your hostname.
+  networking.hostName = "StandAlone-NixOS"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
@@ -47,8 +42,8 @@
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager = {
-      cinnamon.enable = true;
-      gnome.enable = true;
+      cinnamon.enable = false;
+      gnome.enable = false;
     };
     windowManager.bspwm.enable = true;
     # Configure keymap in X11
@@ -63,7 +58,7 @@
 
   programs = {
     hyprland.enable = true;
-    firefox.enable = true;
+    firefox.enable = false;
     waybar.enable = true;
     neovim.enable = true;
     fuse.userAllowOther = true;
@@ -85,14 +80,6 @@
 
   #Fonts
   fonts.packages = with pkgs; [
-    # noto-fonts
-    #  fira-code
-    #  noto-fonts-cjk-sans
-    #  jetbrains-mono
-    #  font-awesome
-    #  terminus_font
-    #(nerdfonts.override {fonts = ["JetBrainsMono"];})
-
     dejavu_fonts
     fira-code
     fira-code-symbols
@@ -102,10 +89,10 @@
     inter
     jetbrains-mono
     material-icons
-    #maple-mono.NF
+    maple-mono.NF
     minecraftia
-    #nerd-fonts.im-writing
-    #nerd-fonts.blex-mono
+    nerd-fonts.im-writing
+    nerd-fonts.blex-mono
     noto-fonts
     noto-fonts-emoji
     noto-fonts-cjk-sans
@@ -114,7 +101,7 @@
     powerline-fonts
     roboto
     roboto-mono
-    symbola
+        #symbola
     terminus_font
   ];
 
@@ -217,31 +204,31 @@
 
   environment.systemPackages = with pkgs; [
     ## Gnome ##
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.burn-my-windows
-    gnomeExtensions.pop-shell
-    gnomeExtensions.caffeine
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.vitals
-    gnomeExtensions.just-perfection
-    gnomeExtensions.open-bar
-    gnomeExtensions.workspace-indicator
-    gnomeExtensions.system-monitor
-    gnome-extension-manager
+        # gnomeExtensions.blur-my-shell
+        #  gnomeExtensions.burn-my-windows
+        # gnomeExtensions.pop-shell
+        # gnomeExtensions.caffeine
+        # gnomeExtensions.clipboard-indicator
+        # gnomeExtensions.vitals
+        # gnomeExtensions.just-perfection
+        # gnomeExtensions.open-bar
+        # gnomeExtensions.workspace-indicator
+        # gnomeExtensions.system-monitor
+        #gnome-extension-manager
     ## End ##
     #
     arandr
-    appimage-run
+    #appimage-run
     bat
     btop
     bottom
-    cargo
+        #cargo
     cava
     clang
     cmatrix
     curl
     #discord
-    discord-canary
+        #discord-canary
     dua
     duf
     dunst
@@ -252,7 +239,7 @@
     fd
     findutils
     file-roller
-    ffmpeg
+        #ffmpeg
     fortune
     flameshot
     fd
@@ -264,13 +251,14 @@
     ghostty
     glib
     glxinfo
-    gpu-viewer
+        #gpu-viewer
     gnumake
     google-chrome
+    brave
     gping
     htop
     hyfetch
-    imagemagick
+        #imagemagick
     iotop
     inxi
     jq
@@ -281,24 +269,24 @@
     libnotify
     lshw
     lsd
-    lxqt.lxqt-policykit
+    #lxqt.lxqt-policykit
     luarocks
     lunarvim
     lxappearance
     mission-center
     meson
     mc
-    mpd
+        #mpd
     mpv
     mlocate
     multimarkdown
     neofetch
-    neovide
+        #neovide
     ncftp
     nodejs
     nh
     ncdu
-    ninja
+        #ninja
     nwg-look
     nodejs
     #nvtopPackages.full
@@ -313,7 +301,7 @@
     pyprland
     ranger
     ripgrep
-    rofi-wayland
+    rofi
     nitrogen
     shellcheck
     starship
@@ -325,19 +313,14 @@
     usbutils
     variety
     virt-viewer
-    vlc
+        #vlc
     vscode-fhs
-    volumeicon
+        #volumeicon
     waypaper
     wezterm
     wget
     wlogout
     wofi
-    #  override for Yazi to keep it at v3.3
-    #  (yazi.overrideAttrs (oldAttrs: {
-    #   inherit (oldAttrs) pname;
-    #      version = "0.3.3";
-    #    }))
     yazi
     ytmdl
     zip
