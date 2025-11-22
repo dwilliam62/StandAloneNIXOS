@@ -1,4 +1,4 @@
-## DDUBS Hyprland, GNOME, BSPWM, Cinnamon config
+## DDUBS Standalone Hyprland, GNOME, BSPWM, Cinnamon config
 #
 {
   lib,
@@ -6,27 +6,29 @@
   ...
 }: {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    #./configs/pyprland-config.nix
-    #./configs/hyprland-config.nix
   ];
 
   # Bootloader.
   boot = {
-    loader.systemd-boot.enable = true;
-    loader.timeout = 10;
-    loader.efi.canTouchEfiVariables = true;
+    loader = {
+      systemd-boot.enable = true;
+      timeout = 10;
+      efi.canTouchEfiVariables = true;
+    };
     kernelPackages = pkgs.linuxPackages_latest;
    };
 
-  networking.hostName = "StandAlone-NixOS"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "StandAlone-NixOS"; # Define your hostname.
+    networkmanager.enable = true;
+    #wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  };
+
 
   time.timeZone = "America/New_York";
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
