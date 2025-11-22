@@ -20,4 +20,4 @@ Date:       Version:        Comments:
 11/22/245   0.6             Updated flake, fixed pkg name changes, waybar from Matt Webb 
                             Updated yazi config, fastfetch config, hyprland startup and bindings upd
                             Updated tmux to tony's config, added pkgs, small formatting update configuration.nix
-
+                            Disabled exec-once = waybar It's started by waybar.enable=true;
