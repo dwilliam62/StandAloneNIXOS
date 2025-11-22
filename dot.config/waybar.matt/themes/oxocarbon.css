@@ -1,0 +1,23 @@
+@define-color bg-hover     #393939;  /* base02 */
+@define-color lbg          #262626;  /* base01 */
+@define-color bg           #161616;  /* base00 */
+@define-color blue         #78a9ff;  /* base09 */
+@define-color sky          #78a9ff;  /* base09 */
+@define-color red          #3ddbd9;  /* base08 */
+@define-color pink         #be95ff;  /* base0E */
+@define-color lavender     #be95ff;  /* base0E */
+@define-color rosewater    #3ddbd9;  /* base08 */
+@define-color flamingo     #3ddbd9;  /* base08 */
+@define-color fg           #f2f4f8;  /* base05 */
+@define-color green        #33b1ff;  /* base0B */
+@define-color active-green #33b1ff;  /* base0B */
+@define-color dark-fg      #525252;  /* base03 */
+@define-color peach        #ee5396;  /* base0A */
+@define-color border       @lavender;
+@define-color gray2        #dde1e6;  /* base04 */
+@define-color black4       #161616;  /* base00 */
+@define-color black3       #262626;  /* base01 */
+@define-color maroon       #3ddbd9;  /* base08 */
+@define-color yellow       #ee5396;  /* base0A */
+
+

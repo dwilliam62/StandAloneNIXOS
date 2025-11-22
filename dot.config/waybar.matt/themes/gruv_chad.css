@@ -1,0 +1,13 @@
+/* → gruvbox-hard-dark equivalents */
+@define-color fg             #EBDBB2;  /* Gruvbox fg1 (primary text) :contentReference[oaicite:1]{index=1} */
+@define-color bg-dark        #1D2021;  /* Gruvbox hard background (dark0_hard) :contentReference[oaicite:2]{index=2} */
+@define-color accent-blue    #83A598;  /* Gruvbox strong blue :contentReference[oaicite:3]{index=3} */
+@define-color fg-alt         #D5C4A1;  /* Gruvbox fg2 (secondary text) :contentReference[oaicite:4]{index=4} */
+@define-color accent-purple  #D3869B;  /* Gruvbox strong purple :contentReference[oaicite:5]{index=5} */
+@define-color red            #FB4934;  /* Gruvbox strong red :contentReference[oaicite:6]{index=6} */
+@define-color bg-black       #1D2021;  /* same as hard background :contentReference[oaicite:7]{index=7} */
+@define-color accent-yellow  #FABD2F;  /* Gruvbox strong yellow :contentReference[oaicite:8]{index=8} */
+@define-color accent-green   #B8BB26;  /* Gruvbox strong green :contentReference[oaicite:9]{index=9} */
+@define-color accent-cyan    #8EC07C;  /* Gruvbox strong aqua (“cyan”) :contentReference[oaicite:10]{index=10} */
+@define-color accent-orange  #FE8019;  /* Gruvbox strong orange :contentReference[oaicite:11]{index=11} */
+
