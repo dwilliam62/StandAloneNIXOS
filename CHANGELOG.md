@@ -17,3 +17,4 @@ Date:       Version:        Comments:
                             Removed fonts not found in stable, maple, im-writing
                             Added offset to pyprland position to center it better
                             Updated hyprland.conf file. Removed dups
+11/22/245   0.6             Updated flake, fixed pkg name changes, waybar from Matt Webb 
