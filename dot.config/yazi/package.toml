@@ -1,5 +1,22 @@
-[plugin]
-deps = [{ use = "Lil-Dank/lazygit", rev = "c82794f" }, { use = "yazi-rs/plugins:chmod", rev = "9a1129c" }, { use = "yazi-rs/plugins:jump-to-char", rev = "9a1129c" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "2301ff8"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "8f37dc5"
+hash = "ee71543790f0ce3951161045a3787abd"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "2301ff8"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "2301ff8"
+hash = "27ca02f49fd236b5cc7bf03c243859fe"
 
 [flavor]
 deps = []

@@ -18,3 +18,4 @@ Date:       Version:        Comments:
                             Added offset to pyprland position to center it better
                             Updated hyprland.conf file. Removed dups
 11/22/245   0.6             Updated flake, fixed pkg name changes, waybar from Matt Webb 
+                            Updated yazi config, fastfetch config, hyprland startup and bindings upd
