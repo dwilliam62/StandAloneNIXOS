@@ -3,11 +3,11 @@
                "logo": {
                   "source": "~/.config/fastfetch/nixos.png",
                   "type": "kitty-direct",
-                  "height": 7,
-                  "width": 14,
+                  "height": 15,
+                  "width": 30,
                "padding": {
                 "top": 3,
-                "left": 2
+                "left": 3
          }
      },
       "display": {
@@ -19,7 +19,7 @@
             "break",
        {
           "type": "os",
-          "key": "OS - ",
+          "key": "OS - ddubsos + jadots ",
           "keyColor": "31",  // = color1
       },
       {
