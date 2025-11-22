@@ -13,16 +13,19 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.timeout = 10;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.timeout = 10;
+    loader.efi.canTouchEfiVariables = true;
+    kernelPackages = pkgs.linuxPackages_latest;
+   };
 
   networking.hostName = "StandAlone-NixOS"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
+
   time.timeZone = "America/New_York";
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -60,7 +63,10 @@
     hyprland.enable = true;
     firefox.enable = false;
     waybar.enable = true;
-    neovim.enable = true;
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+    };
     fuse.userAllowOther = true;
     dconf.enable = true;
     seahorse.enable = true;
@@ -169,8 +175,6 @@
     path = [pkgs.flatpak];
     script = ''
       flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-      flatpak install -y flathub com.github.tchx84.Flatseal
-      flatpak install -y flathub com.github.flattool.Warehouse
     '';
   };
 
@@ -215,10 +219,11 @@
         # gnomeExtensions.workspace-indicator
         # gnomeExtensions.system-monitor
         #gnome-extension-manager
+        #flameshot
     ## End ##
     #
     arandr
-    #appimage-run
+    appimage-run
     bat
     btop
     bottom
@@ -227,8 +232,8 @@
     clang
     cmatrix
     curl
-    #discord
-        #discord-canary
+    discord
+    discord-canary
     dua
     duf
     dunst
@@ -239,9 +244,8 @@
     fd
     findutils
     file-roller
-        #ffmpeg
+    ffmpeg
     fortune
-    flameshot
     fd
     fzf
     gcc
@@ -276,12 +280,11 @@
     mission-center
     meson
     mc
-        #mpd
     mpv
     mlocate
     multimarkdown
     neofetch
-        #neovide
+    neovide
     ncftp
     nodejs
     nh
@@ -295,25 +298,26 @@
     pavucontrol
     pciutils
     pkg-config
-    picom
+    #picom
     ptyxis
-    polybar
+    #polybar
     pyprland
-    ranger
+    #ranger
     ripgrep
     rofi
     nitrogen
     shellcheck
     starship
     swww
-    sxhkd
+    #sxhkd
     tmux
+    tree
     ugrep
     unzip
     usbutils
-    variety
+    #variety
     virt-viewer
-        #vlc
+    vlc
     vscode-fhs
         #volumeicon
     waypaper
