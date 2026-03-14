@@ -72,7 +72,6 @@
     fuse.userAllowOther = true;
     dconf.enable = true;
     seahorse.enable = true;
-    adb.enable = false;
     thunar.enable = true;
     thunar.plugins = with pkgs.xfce; [
       exo
@@ -277,7 +276,6 @@
     lsd
     #lxqt.lxqt-policykit
     luarocks
-    lunarvim
     lxappearance
     mission-center
     meson
@@ -285,7 +283,6 @@
     mpv
     mlocate
     multimarkdown
-    neofetch
     neovide
     ncftp
     nodejs
