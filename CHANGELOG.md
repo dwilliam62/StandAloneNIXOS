@@ -31,5 +31,6 @@ Date:       Version:        Comments:
                                 - psuedotile
                                 - togglesplit
                                 - swapsplit
+                            removed old pkgs, added a few new utils
                             TBD: Convert to LUA workflow
                                  going to try hyprlang to LUA converter

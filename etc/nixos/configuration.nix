@@ -53,7 +53,7 @@
     desktopManager = {
       cinnamon.enable = false;
     };
-    windowManager.bspwm.enable = true;
+    windowManager.bspwm.enable = false;
     # Configure keymap in X11
     xkb = {
       layout = "us";
@@ -227,12 +227,13 @@
         #flameshot
     ## End ##
     #
-    arandr
+        #arandr
     appimage-run
     bat
     btop
     bottom
-        #cargo
+    cargo
+    cliamp
     cava
     clang
     cmatrix
@@ -241,18 +242,20 @@
     discord-canary
     dua
     duf
-    dunst
+        #dunst
+    dysk
     eza
-    emacs-nox
+    emacs
     fastfetch
     feh
     fd
     findutils
     file-roller
     ffmpeg
-    fortune
+        #fortune
     fd
     fzf
+    gearlever
     gcc
     git
     glances
@@ -263,7 +266,7 @@
         #gpu-viewer
     gnumake
     google-chrome
-    brave
+        #brave
     gping
     htop
     hyfetch
@@ -280,7 +283,7 @@
     lsd
     #lxqt.lxqt-policykit
     luarocks
-    lxappearance
+        #lxappearance
     mission-center
     meson
     mc
@@ -310,18 +313,20 @@
     rofi
     nitrogen
     shellcheck
+    shortwave
     starship
     awww
     #sxhkd
     tmux
     tree
+    atop
+    ttop
     ugrep
     unzip
     usbutils
     #variety
     virt-viewer
     vlc
-    vscode-fhs
         #volumeicon
     waypaper
     wezterm
