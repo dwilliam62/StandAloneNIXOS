@@ -43,12 +43,15 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver = {
+  services = {
+        desktopManager = {
+          gnome.enable = false;
+        };
+     xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager = {
       cinnamon.enable = false;
-      gnome.enable = false;
     };
     windowManager.bspwm.enable = true;
     # Configure keymap in X11
@@ -56,6 +59,7 @@
       layout = "us";
       variant = "";
     };
+   };
   };
 
   # Use lib.mkForce to prioritize GNOME's gsettings overrides
@@ -73,7 +77,7 @@
     dconf.enable = true;
     seahorse.enable = true;
     thunar.enable = true;
-    thunar.plugins = with pkgs.xfce; [
+    thunar.plugins = with pkgs; [
       exo
       thunar-archive-plugin
       thunar-volman
@@ -307,7 +311,7 @@
     nitrogen
     shellcheck
     starship
-    swww
+    awww
     #sxhkd
     tmux
     tree

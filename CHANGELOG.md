@@ -17,7 +17,19 @@ Date:       Version:        Comments:
                             Removed fonts not found in stable, maple, im-writing
                             Added offset to pyprland position to center it better
                             Updated hyprland.conf file. Removed dups
-11/22/245   0.6             Updated flake, fixed pkg name changes, waybar from Matt Webb 
+11/22/25   0.6             Updated flake, fixed pkg name changes, waybar from Matt Webb 
                             Updated yazi config, fastfetch config, hyprland startup and bindings upd
                             Updated tmux to tony's config, added pkgs, small formatting update configuration.nix
                             Disabled exec-once = waybar It's started by waybar.enable=true;
+6/25/26    0.7              Updated to 26.11
+                            Fixed eval warnings:
+                            swww
+                            gnome.desktopManger
+                            xfce.thunar
+                            hyprland config errors w/0.55.4 
+                                - vfr
+                                - psuedotile
+                                - togglesplit
+                                - swapsplit
+                            TBD: Convert to LUA workflow
+                                 going to try hyprlang to LUA converter
