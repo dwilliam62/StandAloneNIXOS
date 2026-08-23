@@ -4,7 +4,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     ./hardware-configuration.nix
   ];
@@ -17,7 +18,7 @@
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-   };
+  };
 
   # Enable networking
   networking = {
@@ -25,7 +26,6 @@
     networkmanager.enable = true;
     #wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   };
-
 
   time.timeZone = "America/New_York";
 
@@ -44,22 +44,22 @@
   };
 
   services = {
-        desktopManager = {
-          gnome.enable = false;
-        };
-     xserver = {
-    enable = true;
-    displayManager.lightdm.enable = true;
     desktopManager = {
-      cinnamon.enable = false;
+      gnome.enable = false;
     };
-    windowManager.bspwm.enable = false;
-    # Configure keymap in X11
-    xkb = {
-      layout = "us";
-      variant = "";
+    xserver = {
+      enable = true;
+      displayManager.lightdm.enable = true;
+      desktopManager = {
+        cinnamon.enable = false;
+      };
+      windowManager.bspwm.enable = false;
+      # Configure keymap in X11
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
     };
-   };
   };
 
   # Use lib.mkForce to prioritize GNOME's gsettings overrides
@@ -78,7 +78,7 @@
     seahorse.enable = true;
     thunar.enable = true;
     thunar.plugins = with pkgs; [
-      exo
+      #exo
       thunar-archive-plugin
       thunar-volman
     ];
@@ -112,7 +112,7 @@
     powerline-fonts
     roboto
     roboto-mono
-        #symbola
+    #symbola
     terminus_font
   ];
 
@@ -176,8 +176,8 @@
   };
 
   systemd.services.flatpak-repo = {
-    wantedBy = ["multi-user.target"];
-    path = [pkgs.flatpak];
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
     script = ''
       flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     '';
@@ -213,21 +213,21 @@
 
   environment.systemPackages = with pkgs; [
     ## Gnome ##
-        # gnomeExtensions.blur-my-shell
-        #  gnomeExtensions.burn-my-windows
-        # gnomeExtensions.pop-shell
-        # gnomeExtensions.caffeine
-        # gnomeExtensions.clipboard-indicator
-        # gnomeExtensions.vitals
-        # gnomeExtensions.just-perfection
-        # gnomeExtensions.open-bar
-        # gnomeExtensions.workspace-indicator
-        # gnomeExtensions.system-monitor
-        #gnome-extension-manager
-        #flameshot
+    # gnomeExtensions.blur-my-shell
+    #  gnomeExtensions.burn-my-windows
+    # gnomeExtensions.pop-shell
+    # gnomeExtensions.caffeine
+    # gnomeExtensions.clipboard-indicator
+    # gnomeExtensions.vitals
+    # gnomeExtensions.just-perfection
+    # gnomeExtensions.open-bar
+    # gnomeExtensions.workspace-indicator
+    # gnomeExtensions.system-monitor
+    #gnome-extension-manager
+    #flameshot
     ## End ##
     #
-        #arandr
+    #arandr
     appimage-run
     bat
     btop
@@ -242,7 +242,7 @@
     discord-canary
     dua
     duf
-        #dunst
+    #dunst
     dysk
     eza
     emacs
@@ -252,10 +252,10 @@
     findutils
     file-roller
     ffmpeg
-        #fortune
+    #fortune
     fd
     fzf
-    gearlever
+    #gearlever
     gcc
     git
     glances
@@ -263,14 +263,14 @@
     ghostty
     glib
     mesa-demos
-        #gpu-viewer
+    #gpu-viewer
     gnumake
     google-chrome
-        #brave
+    #brave
     gping
     htop
     hyfetch
-        #imagemagick
+    #imagemagick
     iotop
     inxi
     jq
@@ -283,7 +283,7 @@
     lsd
     #lxqt.lxqt-policykit
     luarocks
-        #lxappearance
+    #lxappearance
     mission-center
     meson
     mc
@@ -295,7 +295,7 @@
     nodejs
     nh
     ncdu
-        #ninja
+    #ninja
     nwg-look
     nodejs
     #nvtopPackages.full
@@ -308,10 +308,10 @@
     ptyxis
     #polybar
     pyprland
+    python3
     #ranger
     ripgrep
     rofi
-    nitrogen
     shellcheck
     shortwave
     starship
@@ -327,7 +327,7 @@
     #variety
     virt-viewer
     vlc
-        #volumeicon
+    #volumeicon
     waypaper
     wezterm
     wget

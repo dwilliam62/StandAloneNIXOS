@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# Log file for debugging
+LOGFILE="/tmp/copy-hyprland-config.log"
+
+# Start logging
+echo "Starting script..." > $LOGFILE
+
+# Create the directory
+mkdir -p ~/.config/hypr 2>> $LOGFILE
+
+# Check if directory creation was successful
+if [ $? -ne 0 ]; then
+  echo "Failed to create directory" >> $LOGFILE
+  exit 1
+fi
+
+# Log directory creation success
+echo "Directory created" >> $LOGFILE
+
+# Create the configuration file
+cat <<EOF > ~/.config/hypr/hyprland.conf
+#monitor=Virtual-1,2560x1440@60,auto,1
+monitor=Virtual-1,1920x1080@60,auto,1
+
+# Set programs that you use
+$$terminal = ghostty
+$$fileManager = thunar
+$$menu = rofi -show drun
+#$$menu = wofi --show drun
+
+EOF
+
+# Check if file creation was successful
+if [ $? -ne 0 ]; then
+  echo "Failed to create configuration file" >> $LOGFILE
+  exit 1
+fi
+
+# Log file creation success
+echo "Configuration file created successfully" >> $LOGFILE
+
+# End logging
+echo "Script completed" >> $LOGFILE
+

@@ -34,3 +34,6 @@ Date:       Version:        Comments:
                             removed old pkgs, added a few new utils
                             TBD: Convert to LUA workflow
                                  going to try hyprlang to LUA converter
+8/23/26     0.8            converted to LUA (99%)
+                                - Some bindings ALT-TAB/mouse resize inop 
+                                - UPD HL v0.65.2 / Kernel 7.2.0 
