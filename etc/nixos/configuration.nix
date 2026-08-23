@@ -282,7 +282,9 @@
     lshw
     lsd
     #lxqt.lxqt-policykit
+    lua
     luarocks
+    luaPackages.luacheck
     #lxappearance
     mission-center
     meson
