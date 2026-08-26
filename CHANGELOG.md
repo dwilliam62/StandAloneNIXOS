@@ -37,3 +37,4 @@ Date:       Version:        Comments:
 8/23/26     0.8            converted to LUA (99%)
                                 - UPD HL v0.65.2 / Kernel 7.2.0 
                                 - Window Rules need importing 
+                                - Cleanup up old config files
