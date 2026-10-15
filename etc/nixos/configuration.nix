@@ -358,7 +358,7 @@
     clang-tools
     docker-compose-language-service
     docker-compose
-    typescript-language-server
+    #typescript-language-server # unused; its pnpm-deps FOD hash is broken in nixpkgs 26.11pre
   ];
 
   xdg.portal = {
